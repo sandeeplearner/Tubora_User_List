@@ -12,7 +12,7 @@ class UserInfoTableViewController: UITableViewController {
 
     var currentlySelectedUser : Users!
     var currentlyAppliedSearchFilter : SearchFilterEnum!
-    var processedUserInfoDictionary : [String : String]!
+    var processedUserInfo : [(String,String)]!
     
     lazy var userInfoController : UserInfoController = {
         let controller = UserInfoController()
@@ -21,7 +21,7 @@ class UserInfoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        processedUserInfoDictionary = self.userInfoController.removeTheProperty(fromUser: currentlySelectedUser, forSelectedFilter: currentlyAppliedSearchFilter)
+        processedUserInfo = self.userInfoController.removeTheProperty(fromUser: currentlySelectedUser, forSelectedFilter: currentlyAppliedSearchFilter)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,13 +36,13 @@ class UserInfoTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return processedUserInfoDictionary.keys.count
+        return processedUserInfo.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("userInfoCell") as! UserInfoCell
-        cell.propertyLabel.text = Array(processedUserInfoDictionary.keys)[indexPath.row]
-        cell.valueLabel.text = processedUserInfoDictionary[Array(processedUserInfoDictionary.keys)[indexPath.row]]
+        cell.propertyLabel.text = processedUserInfo[indexPath.row].0
+        cell.valueLabel.text = processedUserInfo[indexPath.row].1
         return cell
     }
 }

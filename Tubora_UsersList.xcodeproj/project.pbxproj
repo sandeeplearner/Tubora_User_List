@@ -30,6 +30,13 @@
 		8B77EC0D1D91A44100ED066A /* UsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77EC0C1D91A44100ED066A /* UsersCell.swift */; };
 		8B77EC0F1D91AB4200ED066A /* FiltersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77EC0E1D91AB4200ED066A /* FiltersListViewController.swift */; };
 		8B77EC111D91AD5900ED066A /* FiltersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77EC101D91AD5900ED066A /* FiltersListController.swift */; };
+		8BFE4F141D92C92E00EDD81D /* UsersListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F131D92C92E00EDD81D /* UsersListViewControllerTest.swift */; };
+		8BFE4F1E1D92D18F00EDD81D /* UserListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F1D1D92D18F00EDD81D /* UserListControllerTests.swift */; };
+		8BFE4F211D92DD4F00EDD81D /* FilterListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F201D92DD4F00EDD81D /* FilterListViewControllerTests.swift */; };
+		8BFE4F231D92E0C900EDD81D /* FilterListViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F221D92E0C900EDD81D /* FilterListViewControllerMock.swift */; };
+		8BFE4F251D92E23800EDD81D /* FilterListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F241D92E23800EDD81D /* FilterListControllerTests.swift */; };
+		8BFE4F281D92E45B00EDD81D /* UserInfoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F271D92E45B00EDD81D /* UserInfoViewControllerTests.swift */; };
+		8BFE4F2A1D92E61900EDD81D /* UserInfoControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE4F291D92E61900EDD81D /* UserInfoControllerTests.swift */; };
 		A25633711B7A95185ED1ED42 /* Pods_Tubora_UsersListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D7DD4D5E6E59C374DFAD2 /* Pods_Tubora_UsersListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +80,13 @@
 		8B77EC0C1D91A44100ED066A /* UsersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersCell.swift; sourceTree = "<group>"; };
 		8B77EC0E1D91AB4200ED066A /* FiltersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersListViewController.swift; sourceTree = "<group>"; };
 		8B77EC101D91AD5900ED066A /* FiltersListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersListController.swift; sourceTree = "<group>"; };
+		8BFE4F131D92C92E00EDD81D /* UsersListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewControllerTest.swift; sourceTree = "<group>"; };
+		8BFE4F1D1D92D18F00EDD81D /* UserListControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListControllerTests.swift; sourceTree = "<group>"; };
+		8BFE4F201D92DD4F00EDD81D /* FilterListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewControllerTests.swift; sourceTree = "<group>"; };
+		8BFE4F221D92E0C900EDD81D /* FilterListViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewControllerMock.swift; sourceTree = "<group>"; };
+		8BFE4F241D92E23800EDD81D /* FilterListControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListControllerTests.swift; sourceTree = "<group>"; };
+		8BFE4F271D92E45B00EDD81D /* UserInfoViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewControllerTests.swift; sourceTree = "<group>"; };
+		8BFE4F291D92E61900EDD81D /* UserInfoControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoControllerTests.swift; sourceTree = "<group>"; };
 		B9E09B58A8F93B3417BDEA26 /* Pods-Tubora_UsersListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tubora_UsersListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tubora_UsersListTests/Pods-Tubora_UsersListTests.release.xcconfig"; sourceTree = "<group>"; };
 		C185F585C405C04172AAF88F /* Pods-Tubora_UsersList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tubora_UsersList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tubora_UsersList/Pods-Tubora_UsersList.debug.xcconfig"; sourceTree = "<group>"; };
 		C9FF60E79A6BAD143422A401 /* Pods-Tubora_UsersList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tubora_UsersList.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tubora_UsersList/Pods-Tubora_UsersList.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +182,9 @@
 		8B77EBE91D918BFB00ED066A /* Tubora_UsersListTests */ = {
 			isa = PBXGroup;
 			children = (
+				8BFE4F261D92E44800EDD81D /* UserInfoViewController */,
+				8BFE4F1F1D92DD3C00EDD81D /* FilterListViewController */,
+				8BFE4F121D92C90E00EDD81D /* UsersListViewController */,
 				8B77EBEA1D918BFB00ED066A /* Tubora_UsersListTests.swift */,
 				8B77EBEC1D918BFB00ED066A /* Info.plist */,
 			);
@@ -230,6 +247,34 @@
 				8B77EC051D91957700ED066A /* UsersList.swift */,
 			);
 			name = DataSource;
+			sourceTree = "<group>";
+		};
+		8BFE4F121D92C90E00EDD81D /* UsersListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE4F131D92C92E00EDD81D /* UsersListViewControllerTest.swift */,
+				8BFE4F1D1D92D18F00EDD81D /* UserListControllerTests.swift */,
+			);
+			name = UsersListViewController;
+			sourceTree = "<group>";
+		};
+		8BFE4F1F1D92DD3C00EDD81D /* FilterListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE4F201D92DD4F00EDD81D /* FilterListViewControllerTests.swift */,
+				8BFE4F221D92E0C900EDD81D /* FilterListViewControllerMock.swift */,
+				8BFE4F241D92E23800EDD81D /* FilterListControllerTests.swift */,
+			);
+			name = FilterListViewController;
+			sourceTree = "<group>";
+		};
+		8BFE4F261D92E44800EDD81D /* UserInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE4F271D92E45B00EDD81D /* UserInfoViewControllerTests.swift */,
+				8BFE4F291D92E61900EDD81D /* UserInfoControllerTests.swift */,
+			);
+			name = UserInfoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +505,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B77EBEB1D918BFB00ED066A /* Tubora_UsersListTests.swift in Sources */,
+				8BFE4F251D92E23800EDD81D /* FilterListControllerTests.swift in Sources */,
+				8BFE4F2A1D92E61900EDD81D /* UserInfoControllerTests.swift in Sources */,
+				8BFE4F141D92C92E00EDD81D /* UsersListViewControllerTest.swift in Sources */,
+				8BFE4F281D92E45B00EDD81D /* UserInfoViewControllerTests.swift in Sources */,
+				8BFE4F231D92E0C900EDD81D /* FilterListViewControllerMock.swift in Sources */,
+				8BFE4F211D92DD4F00EDD81D /* FilterListViewControllerTests.swift in Sources */,
+				8BFE4F1E1D92D18F00EDD81D /* UserListControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

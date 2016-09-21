@@ -9,7 +9,7 @@
         <!--Users List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UsersListViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="usersListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="UsersListViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,7 +89,7 @@
         <!--Filters List View Controller-->
         <scene sceneID="d1O-ep-KCM">
             <objects>
-                <tableViewController id="inc-2p-ZT7" customClass="FiltersListViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="filterListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="inc-2p-ZT7" customClass="FiltersListViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="UZg-d8-WSE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@
         <!--User Info Table View Controller-->
         <scene sceneID="Nrr-Xt-dzT">
             <objects>
-                <tableViewController id="uxv-Nr-zSE" customClass="UserInfoTableViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="userInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uxv-Nr-zSE" customClass="UserInfoTableViewController" customModule="Tubora_UsersList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZWp-uF-XmI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

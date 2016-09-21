@@ -9,7 +9,7 @@
 import Foundation
 
 class UserInfoController {
-    func removeTheProperty(fromUser user : Users, forSelectedFilter selectedFilter : SearchFilterEnum) -> [String : String]{
+    func removeTheProperty(fromUser user : Users, forSelectedFilter selectedFilter : SearchFilterEnum) -> [(String,String)]{
         var processedUserInfoDictionary = [String : String]()
         var mirroredObjectOfPassedUser : _MirrorType!
         mirroredObjectOfPassedUser = _reflect(user)
@@ -18,10 +18,11 @@ class UserInfoController {
         for i in 0 ..< mirroredObjectOfPassedUser.count {
             let (propertyname,propertyValue) = mirroredObjectOfPassedUser[i]
             if propertyToBeIgnored != propertyname {
-                processedUserInfoDictionary[propertyname] = propertyValue.value as? String
+                processedUserInfoDictionary[self.displayLabelTextForProperty(propertyname)] = propertyValue.value as? String
             }
         }
-        return processedUserInfoDictionary
+        let sortedDict = processedUserInfoDictionary.sort{ $0.0.localizedCaseInsensitiveCompare($1.0) == .OrderedAscending }
+        return sortedDict
     }
     
     func findUserPropertyToIgnore(forSelectedFilter selectedFilter : SearchFilterEnum) -> String {
@@ -38,5 +39,28 @@ class UserInfoController {
             propertyToBeIgnored = "employeeType"
         }
         return propertyToBeIgnored
+    }
+    
+    func displayLabelTextForProperty(property : String) -> String {
+        let displayLabelText : String!
+        switch property {
+        case "department":
+            displayLabelText = "Department"
+        case "firstName":
+            displayLabelText = "First Name"
+        case "lastName":
+            displayLabelText = "Last Name"
+        case "jobTitle":
+            displayLabelText = "Job Title"
+        case "emailAddress":
+            displayLabelText = "Email"
+        case "employeeType":
+            displayLabelText = "Employment Type"
+        case "location":
+            displayLabelText = "Location"
+        default:
+            displayLabelText = property
+        }
+        return displayLabelText
     }
 }
