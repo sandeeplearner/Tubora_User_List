@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="userCell" rowHeight="77" id="QVi-Pg-BKS" customClass="UsersCell" customModule="Tubora_UsersList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QVi-Pg-BKS" id="M0k-Q5-1QD">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-NA-HTI">
+                        <rect key="frame" x="8" y="42" width="275" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I49-gO-Jv8">
+                        <rect key="frame" x="8" y="8" width="275" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I49-gO-Jv8" firstAttribute="leading" secondItem="M0k-Q5-1QD" secondAttribute="leading" constant="8" id="2MV-0D-CuG"/>
+                    <constraint firstItem="I49-gO-Jv8" firstAttribute="top" secondItem="M0k-Q5-1QD" secondAttribute="top" constant="8" id="6Bh-61-6K9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jNe-NA-HTI" secondAttribute="bottom" constant="5.5" id="89T-mQ-eCz"/>
+                    <constraint firstItem="jNe-NA-HTI" firstAttribute="leading" secondItem="I49-gO-Jv8" secondAttribute="leading" id="Bei-qA-NRu"/>
+                    <constraint firstAttribute="trailing" secondItem="I49-gO-Jv8" secondAttribute="trailing" constant="8" id="NEe-81-bY8"/>
+                    <constraint firstItem="jNe-NA-HTI" firstAttribute="top" secondItem="I49-gO-Jv8" secondAttribute="bottom" constant="10" id="blh-NH-lDq"/>
+                    <constraint firstItem="jNe-NA-HTI" firstAttribute="trailing" secondItem="I49-gO-Jv8" secondAttribute="trailing" id="d2Z-Pm-obb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userDepartmentLabel" destination="jNe-NA-HTI" id="eT9-tr-8zf"/>
+                <outlet property="userNameLabel" destination="I49-gO-Jv8" id="Lx0-1x-DQQ"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="229.5"/>
+        </tableViewCell>
+    </objects>
+</document>
